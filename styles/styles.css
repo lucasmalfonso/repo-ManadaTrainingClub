@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de header */
+/* estilos de header top */
+.headerSuperior {
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content:right;
+}
+
+.headerSuperior {    
+    display: flex;
+    align-items: center;
+}
+
+.headerSuperior ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.headerSuperior li {
+    margin: 5px 15px;
+}
+
+.headerSuperior a {
+    color: #3B95E1;
+    text-decoration: none;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* estilos de header nav*/
+
+.headerNav {
+    background-color: #3B95E1;
+    display: flex;
+    justify-content:space-between;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.headerRight ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.headerRight a {
+    color: #EFEFEF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 1em;
+}
+
+.asociate {
+    background-color: #3B95E1;
+    font-family: "Montserrat", sans-serif;
+    color:#EFEFEF;
+    font-weight:bold;
+    border: 2px solid #EFEFEF;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.inicio {
+    padding: 10px 10px;
+}
+
+.inicio a img {
+    width: 150px;
+}
+
+/* estilos de main */
+
+main {
+    background-color:#EFEFEF;
+}
+
+/* section entrenaAhora */
+main .entrenaAhora {
+    background-color:#3B95E1;
+    height: 300px;
+    padding-left: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #EFEFEF;
+}
+
+.entrenaAhora h1 {
+    color: #EFEFEF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 2em;
+}
+
+/* section agendaClase */
+
+.agendaClase {
+    background-color:#3B95E1;
+    height: 50px;
+    margin: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.agendatuPrimer {
+    background-color: #3B95E1;
+    font-family: "Montserrat", sans-serif;
+    color:#EFEFEF;
+    font-weight:bold;
+    border: 2px solid #EFEFEF;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+/* section novedadesSection */
+
+.novedadesSection {
+    background-color:#EFEFEF;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.novedadesSection h2 {
+    color:#3B95E1;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 2em;
+}
+
+.novedadesSection p {
+    color:#3B95E1;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 1em;
+}
+
+/* section clasesGrupales */
+
+.clasesGrupales {
+    background-color:#3B95E1;
+    height: 300px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.clasesGrupales h3 {
+    color: #EFEFEF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 2em;
+}
+
+.clasesGrupales p { 
+    color: #EFEFEF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 1em;
+}
+.comenzar {
+    background-color: #3B95E1;
+    font-family: "Montserrat", sans-serif;
+    color:#EFEFEF;
+    font-weight:bold;
+    border: 2px solid #EFEFEF;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 1em;
+}
+    
+/* section entrenamientoPersonal */
+
+.entrenamientoPersonal {
+    background-color:#3B95E1;
+    height: 300px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: 1px solid #EFEFEF;
+}
+
+.entrenamientoPersonal h3 {
+    color: #EFEFEF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 2em;
+}
+
+.entrenamientoPersonal p {
+    color: #EFEFEF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 1em;
+}
+
+.comenzar1 {
+    background-color: #3B95E1;
+    font-family: "Montserrat", sans-serif;
+    color:#EFEFEF;
+    font-weight:bold;
+    border: 2px solid #EFEFEF;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+/* estilos de footer */
+
+.footer {    
+    background-color: #EFEFEF;
+    align-items: center; /*centra el eje vertical*/
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    gap: 32px;
+    padding: 15px 15px;
+    
+}
+
+.copyright {
+    color: #3B95E1;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    border-top: 1px solid #3B95E1;
+    padding: 5px 15px;
+}
+
+.logoredesContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoredesContent a img {
+    width: 150px;
+}
+
+.redes ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes a img {
+    width: 25px;
+}
+
+.columns {  
+    display: flex;
+    color: #3B95E1;
+    font-family: "Montserrat", sans-serif;
+    gap: 32px;
+}
