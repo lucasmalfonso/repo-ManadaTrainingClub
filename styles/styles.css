@@ -252,7 +252,9 @@ main .entrenaAhora {
 }
 
 .logoredesContent a img {
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
 }
 
 .redes ul {
