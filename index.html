@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Manada Training Club | Inicio</title>
 </head>
-
 <body>
     <header>
         <div class="headerSuperior">
@@ -27,15 +27,21 @@
                     <img src="./assets/logo_manada.png" alt="logo_manada">
                 </a>
             </div>
-            <div class="headerRight">
-                <nav>
-                    <ul>
+
+            <nav class="navbar navbar-expand-lg navbar-manada">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse headerRight" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="clases_grupales"><a href="#clases_grupales">CLASES GRUPALES</a></li>
                         <li class="entrenamiento_personal"><a href="#entrenamiento_personal">ENTRENAMIENTO PERSONAL</a></li>
                         <li><button class="asociate">ASOCIATE</button></li>
                     </ul>
-                </nav>
+                </div>
             </div>
+            </nav>
         </div>            
     </header>
     <main id="mainIndex">
@@ -44,15 +50,17 @@
         </section>
             
         
-        <section class="agendaClase">
+        <section class="agendaClase agendaClase d-flex justify-content-center align-items-center m-2">
             <button class="agendatuPrimer">¡AGENDA TU PRIMER CLASE GRATIS!</button>
         </section>
             
          
-        <section class="novedadesSection">
+        <div href="pages/novedades.html">   
+            <section class="novedadesSection" >
             <h2 class="novedades">NOVEDADES</h2>
             <p>Informacion importante</p>
-        </section>
+            </section>
+        </div>
 
         <section class="clasesGrupales" id="clases_grupales">
             <h3>CLASES GRUPALES</h3>
@@ -61,7 +69,7 @@
             <p>fuerza, resistencia y movilidad. En un ambiente motivador y</p>
             <p>acompañado por un instructor, se trabaja en grupo</p>
             <p>potenciando el rendimiento individual.</p>
-            <button class="comenzar">COMENZAR</button>
+            <button class="boton-comenzar">COMENZAR</button>
         </section>     
         
         <section class="entrenamientoPersonal" id="entrenamiento_personal">
@@ -71,7 +79,7 @@
             <p>de cada persona. Con el acompañamiento de un profesional,</p>
             <p>se asegura un progreso seguro, eficiente y enfocado</p>
             <p>en resultados reales</p>
-            <button class="comenzar1">COMENZAR</button>
+            <button class="boton-comenzar">COMENZAR</button>
         </section>
 
     </main>
@@ -107,6 +115,6 @@
         </div>
         <p class="copyright">© Copyright 2025 - Manada Training Club - Todos los derechos reservados</p>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Manada Training Club | Preguntas frecuentes</title>
 </head>
 <body>
@@ -23,22 +24,54 @@
                 <img src="/assets/logo_manada.png" alt="">
                 </a>
             </div>
-            <div class="headerNav_right">
-                <nav>
-                    <ul>
-                        <li><a href="#clases_grupales">CLASES GRUPALES</a></li>
-                        <li><a href="#entrenamiento_personal">ENTRENAMIENTO PERSONAL</a></li>
-                        <li><button>INSCRÍBETE</button></li>
+            <nav class="navbar navbar-expand-lg navbar-manada">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse headerRight" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="clases_grupales"><a href="../index.html">CLASES GRUPALES</a></li>
+                        <li class="entrenamiento_personal"><a href="../index.html">ENTRENAMIENTO PERSONAL</a></li>
+                        <li><button class="asociate">ASOCIATE</button></li>
                     </ul>
-                </nav>
+                </div>
             </div>
+            </nav>
         </div>            
     </header>
-    <footer>
-        <img src="./assets/instagram.png" alt="">
-        <img src="./assets/whatsapp.png" alt="">
-        <p>© Copyright 2025 - Manada Training Club - Todos los derechos reservados</p>
-        <p>Envianos tu consulta a: <a href="mailto:manadatrainingclub@gmail.com" target="_blank">manadatrainingclub@gmail.com</a></p>
-    </footer>
+
+    <div class="footer">
+        <div class="footerContent">
+            <div class="logoredesContent">
+                <a href="../index.html">
+                    <img src="../assets/logo_manada_footer.png" alt="logo_manada_footer">
+                </a>
+                <div class="redes">
+                    <ul>
+                        <li><a href="mailto:manadatrainingclub@gmail.com" target="_blank"><img src="../assets/email.png" alt="email"></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/manadatrainingclub/" target="_blank"><img src="../assets/instagram.png" alt="instagram"></a></li>
+                        <li><a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/whatsapp.png" alt="whatsapp"></a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="contacto">
+                    <h3>CONTACTO</h3>
+                    <p>Astor Piazzolla 3055 CABA</p>
+                    <p>011-2256-2658</p>
+                    <a href="mailto:manadatrainingclub@gmail.com" target="_blank">manadatrainingclub@gmail.com</a>
+                </div>
+                <div class="formacion">
+                    <h3>FORMACION</h3>
+                    <p>Coach de Crossfit</p>
+                    <p>Coach en salud</p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© Copyright 2025 - Manada Training Club - Todos los derechos reservados</p>
+    </div>
 </body>
 </html>

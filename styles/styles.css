@@ -62,13 +62,21 @@
 
 .asociate {
     background-color: #3B95E1;
+    color: #EFEFEF;
     font-family: "Montserrat", sans-serif;
-    color:#EFEFEF;
-    font-weight:bold;
+    font-weight: bold;
     border: 2px solid #EFEFEF;
     border-radius: 50px;
-    padding: 5px;
+    padding: 8px 20px;
     font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.asociate:hover {
+    background-color: #EFEFEF;
+    color: #3B95E1;
+    box-shadow: 0 0 10px rgba(59, 149, 225, 0.7);
 }
 
 .inicio {
@@ -76,7 +84,13 @@
 }
 
 .inicio a img {
-    width: 150px;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.navbar-manada {
+    background-color: #3B95E1;
 }
 
 /* estilos de main */
@@ -105,23 +119,30 @@ main .entrenaAhora {
 /* section agendaClase */
 
 .agendaClase {
-    background-color:#3B95E1;
-    height: 50px;
-    margin: 5px 5px;
+    background-color: #3B95E1;
+    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .agendatuPrimer {
     background-color: #3B95E1;
+    color: #EFEFEF;
     font-family: "Montserrat", sans-serif;
-    color:#EFEFEF;
-    font-weight:bold;
+    font-weight: bold;
     border: 2px solid #EFEFEF;
     border-radius: 50px;
-    padding: 5px;
+    padding: 8px 20px;
     font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.agendatuPrimer:hover {
+    background-color: #EFEFEF;
+    color: #3B95E1;
+    box-shadow: 0 0 10px rgba(59, 149, 225, 0.7);
 }
 
 /* section novedadesSection */
@@ -149,92 +170,64 @@ main .entrenaAhora {
     font-size: 1em;
 }
 
-/* section clasesGrupales */
+/* section clasesGrupales y entrenamientoPersonal */
 
-.clasesGrupales {
-    background-color:#3B95E1;
-    height: 300px;
-    padding-left: 10px;
-    padding-top: 5px;
+.clasesGrupales, .entrenamientoPersonal {
+    background-color: #3B95E1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.clasesGrupales h3 {
+.clasesGrupales h3, .entrenamientoPersonal h3 {
     color: #EFEFEF;
-    text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 2em;
 }
 
-.clasesGrupales p { 
+
+.clasesGrupales p, .entrenamientoPersonal p {
     color: #EFEFEF;
-    text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 1em;
 }
-.comenzar {
+
+.boton-comenzar {
     background-color: #3B95E1;
+    color: #EFEFEF;
     font-family: "Montserrat", sans-serif;
-    color:#EFEFEF;
-    font-weight:bold;
+    font-weight: bold;
     border: 2px solid #EFEFEF;
     border-radius: 50px;
-    padding: 5px;
+    padding: 5px 15px;
     font-size: 1em;
-}
-    
-/* section entrenamientoPersonal */
-
-.entrenamientoPersonal {
-    background-color:#3B95E1;
-    height: 300px;
-    padding-left: 10px;
-    padding-top: 5px;
-    border-top: 1px solid #EFEFEF;
+    cursor: pointer;
 }
 
-.entrenamientoPersonal h3 {
-    color: #EFEFEF;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight:bold;
-    font-size: 2em;
-}
-
-.entrenamientoPersonal p {
-    color: #EFEFEF;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight:bold;
-    font-size: 1em;
-}
-
-.comenzar1 {
-    background-color: #3B95E1;
-    font-family: "Montserrat", sans-serif;
-    color:#EFEFEF;
-    font-weight:bold;
-    border: 2px solid #EFEFEF;
-    border-radius: 50px;
-    padding: 5px;
-    font-size: 1em;
+.boton-comenzar:hover {
+    background-color: #EFEFEF;
+    color: #3B95E1;
+    transition: all 0.3s ease;
 }
 
 /* estilos de footer */
 
 .footer {    
     background-color: #EFEFEF;
-    align-items: center; /*centra el eje vertical*/
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .footerContent {
     display: flex;
     gap: 32px;
-    padding: 15px 15px;
-    
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .copyright {
@@ -244,17 +237,21 @@ main .entrenaAhora {
     font-size: 15px;
     border-top: 1px solid #3B95E1;
     padding: 5px 15px;
+    width: 100%;
 }
 
 .logoredesContent {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .logoredesContent a img {
-    max-width: 150px;
-    width: 100%;
+    width: 180px;
+    max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .redes ul {
@@ -263,6 +260,8 @@ main .entrenaAhora {
     gap: 15px;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .redes a img {
@@ -271,7 +270,14 @@ main .entrenaAhora {
 
 .columns {  
     display: flex;
+    gap: 32px;
     color: #3B95E1;
     font-family: "Montserrat", sans-serif;
-    gap: 32px;
+}
+
+
+.columns > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
