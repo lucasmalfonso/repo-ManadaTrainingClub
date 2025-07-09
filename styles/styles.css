@@ -18,14 +18,17 @@
 }
 
 .headerSuperior ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .headerSuperior li {
     margin: 5px 15px;
+    text-align: center;
 }
 
 .headerSuperior a {
