@@ -213,6 +213,15 @@ main .entrenaAhora {
     transition: all 0.3s ease;
 }
 
+@media screen and (min-width: 768px) {
+  .boton-comenzar {
+    width: 140px;              
+    padding: 6px 0;            
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+
 /* estilos de footer */
 
 .footer {    
@@ -268,11 +277,13 @@ main .entrenaAhora {
     width: 25px;
 }
 
-.columns {  
-    display: flex;
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 32px;
     color: #3B95E1;
     font-family: "Montserrat", sans-serif;
+    width: 100%;
 }
 
 
