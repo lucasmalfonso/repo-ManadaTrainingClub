@@ -1,23 +1,19 @@
+/* estilos de reset */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* estilos de header */
 /* estilos de header top */
 .headerSuperior {
-    background-color: #EFEFEF;
-    display: flex;
-    justify-content:right;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
-
-.headerSuperior {    
-    display: flex;
-    align-items: center;
-}
-
-.headerSuperior ul {
+.headerSuperior nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px 20px;
@@ -25,274 +21,259 @@
   padding: 0;
   margin: 0;
 }
-
-.headerSuperior li {
-    margin: 5px 15px;
-    text-align: center;
+.headerSuperior nav ul li {
+  margin: 5px 15px;
+  text-align: center;
 }
-
-.headerSuperior a {
-    color: #3B95E1;
-    text-decoration: none;
-    display: block;
-    font-family: "Montserrat", sans-serif;
+.headerSuperior nav ul li a {
+  color: #3B95E1;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  display: block;
 }
 
 /* estilos de header nav*/
-
 .headerNav {
-    background-color: #3B95E1;
-    display: flex;
-    justify-content:space-between;
-    padding-right: 10px;
-    align-items: center;
+  background-color: #3B95E1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
 }
 
 .headerRight ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  display: flex;
+  align-items: center;
 }
-
-.headerRight a {
-    color: #EFEFEF;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight:bold;
-    font-size: 1em;
+.headerRight ul li a, .headerRight ul li button {
+  color: #EFEFEF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-
-.asociate {
-    background-color: #3B95E1;
-    color: #EFEFEF;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    border: 2px solid #EFEFEF;
-    border-radius: 50px;
-    padding: 8px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.headerRight ul li .asociate {
+  background-color: #3B95E1;
+  color: #EFEFEF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border: 2px solid #EFEFEF;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
-.asociate:hover {
-    background-color: #EFEFEF;
-    color: #3B95E1;
-    box-shadow: 0 0 10px rgba(59, 149, 225, 0.7);
+.headerRight ul li .asociate:hover {
+  background-color: #EFEFEF;
+  color: #3B95E1;
+  box-shadow: 0 0 10px rgba(59, 149, 225, 0.7);
 }
 
 .inicio {
-    padding: 10px 10px;
+  padding: 10px 10px;
 }
-
 .inicio a img {
-    width: 60%;
-    height: auto;
-    object-fit: cover;
+  width: 60%;
+  height: auto;
+  object-fit: cover;
 }
 
 .navbar-manada {
-    background-color: #3B95E1;
+  background-color: #3B95E1;
 }
 
 /* estilos de main */
-
-main {
-    background-color:#EFEFEF;
-}
-
 /* section entrenaAhora */
-main .entrenaAhora {
-    background-color:#3B95E1;
-    height: 300px;
-    padding-left: 10px;
-    padding-top: 30px;
-    border-top: 1px solid #EFEFEF;
+main {
+  background-color: #EFEFEF;
 }
-
-.entrenaAhora h1 {
-    color: #EFEFEF;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight:bold;
-    font-size: 2em;
+main .entrenaAhora {
+  background-color: #3B95E1;
+  height: 300px;
+  padding-left: 10px;
+  padding-top: 30px;
+  border-top: 1px solid #EFEFEF;
+}
+main .entrenaAhora h1 {
+  color: #EFEFEF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2em;
 }
 
 /* section agendaClase */
-
 .agendaClase {
-    background-color: #3B95E1;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #3B95E1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.agendatuPrimer {
-    background-color: #3B95E1;
-    color: #EFEFEF;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    border: 2px solid #EFEFEF;
-    border-radius: 50px;
-    padding: 8px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.agendaClase .agendatuPrimer {
+  background-color: #3B95E1;
+  color: #EFEFEF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border: 2px solid #EFEFEF;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .agendatuPrimer:hover {
-    background-color: #EFEFEF;
-    color: #3B95E1;
-    box-shadow: 0 0 10px rgba(59, 149, 225, 0.7);
+  background-color: #EFEFEF;
+  color: #3B95E1;
+  box-shadow: 0 0 10px rgba(59, 149, 225, 0.7);
 }
 
 /* section novedadesSection */
-
-.novedadesSection {
-    background-color:#EFEFEF;
-    height: 80px;
-    padding-left: 10px;
-    padding-top: 5px;
+.novedades-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
-
-.novedadesSection h2 {
-    color:#3B95E1;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight:bold;
-    font-size: 2em;
+.novedades-link .novedadesSection {
+  background-color: #EFEFEF;
+  height: 80px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
-
-.novedadesSection p {
-    color:#3B95E1;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight:bold;
-    font-size: 1em;
+.novedades-link .novedadesSection h2 {
+  color: #3B95E1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2em;
+}
+.novedades-link .novedadesSection p {
+  color: #3B95E1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 /* section clasesGrupales y entrenamientoPersonal */
-
 .clasesGrupales, .entrenamientoPersonal {
-    background-color: #3B95E1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    border-top: 1px solid #EFEFEF;
+  background-color: #3B95E1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #EFEFEF;
 }
-
 .clasesGrupales h3, .entrenamientoPersonal h3 {
-    color: #EFEFEF;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 2em;
+  color: #EFEFEF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
 }
-
-
 .clasesGrupales p, .entrenamientoPersonal p {
-    color: #EFEFEF;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 1em;
+  color: #EFEFEF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
 }
-
-.boton-comenzar {
-    background-color: #3B95E1;
-    color: #EFEFEF;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    border: 2px solid #EFEFEF;
-    border-radius: 50px;
-    padding: 8px 20px;
-    font-size: 1em;
-    cursor: pointer;
+.clasesGrupales button, .entrenamientoPersonal button {
+  background-color: #3B95E1;
+  color: #EFEFEF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border: 2px solid #EFEFEF;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .boton-comenzar:hover {
-    background-color: #EFEFEF;
-    color: #3B95E1;
-    transition: all 0.3s ease;
+  background-color: #EFEFEF;
+  color: #3B95E1;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
   .boton-comenzar {
-    width: 140px;              
-    padding: 8px 20px;            
+    width: 140px;
+    padding: 8px 20px;
     font-size: 0.9em;
     text-align: center;
   }
 }
-
 /* estilos de footer */
-
-.footer {    
-    background-color: #EFEFEF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer {
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .footerContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 15px;
+}
+.footer .footerContent .logoredesContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .footerContent .logoredesContent a img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.footer .footerContent .logoredesContent .redes ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.footer .footerContent .logoredesContent .redes ul li a img {
+  width: 25px;
+}
+.footer .footerContent .contacto, .footer .footerContent .formacion {
+  color: #3B95E1;
+  font-family: "Montserrat", sans-serif;
+  gap: 32px;
+  width: 100%;
+}
+.footer .copyright {
+  color: #3B95E1;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  border-top: 1px solid #3B95E1;
+  padding: 5px 15px;
+  width: 100%;
 }
 
-.footerContent {
-    display: flex;
-    gap: 32px;
-    padding: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logoredesContent {
+    grid-column: 1/-1;
+  }
+  .contacto, .formacion {
+    min-width: 0;
+  }
 }
 
-.copyright {
-    color: #3B95E1;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 15px;
-    border-top: 1px solid #3B95E1;
-    padding: 5px 15px;
-    width: 100%;
-}
-
-.logoredesContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.logoredesContent a img {
-    width: 180px;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.redes ul {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.redes a img {
-    width: 25px;
-}
-
-.columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 32px;
-    color: #3B95E1;
-    font-family: "Montserrat", sans-serif;
-    width: 100%;
-}
-
-
-.columns > div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+/*# sourceMappingURL=styles.css.map */
